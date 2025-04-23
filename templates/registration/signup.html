@@ -1,0 +1,94 @@
+{% extends "base.html" %} {% block title %}Sign Up{% endblock title %}
+<div>{% block content %}</div>
+<div
+  class="flex items-center justify-center px-40"
+  style="background-color: #fdfaf6"
+>
+  <div class="w-full max-w-sm p-8 text-center mt-[14vh]">
+    <h2 class="text-3xl font-semibold text-primary mb-4" style="color: #78b3ce">
+      Let’s get Started <span class="inline-block">🚀</span>
+    </h2>
+
+    <form method="post" class="space-y-6">
+      {% csrf_token %}
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text" style="color: #2c2c2c">Username</span>
+        </label>
+        <input
+          type="text"
+          name="username"
+          placeholder="Your username"
+          class="input input-bordered w-full"
+          value="{{ request.POST.username|default_if_none:'' }}"
+          required
+        />
+        <div>{% if form.username.errors %}</div>
+        <p class="text-error text-sm mt-1">{{ form.username.errors.0 }}</p>
+        {% endif %}
+      </div>
+
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text" style="color: #2c2c2c">Email</span>
+        </label>
+        <input
+          type="text"
+          name="email"
+          placeholder="You@example.com"
+          class="input input-bordered w-full"
+          value="{{ request.POST.email|default_if_none:'' }}"
+          required
+        />
+        <div>{% if form.email.errors %}</div>
+        <p class="text-error text-sm mt-1">{{ form.email.errors.0 }}</p>
+        {% endif %}
+      </div>
+
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text" style="color: #2c2c2c">Password</span>
+        </label>
+        <input
+          type="password"
+          name="password1"
+          placeholder="Your password"
+          class="input input-bordered w-full"
+          value="{{ request.POST.password1|default_if_none:'' }}"
+          required
+        />
+        <div>{% if form.password1.errors %}</div>
+        <p class="text-error text-sm mt-1">{{ form.password1.errors.0 }}</p>
+        {% endif %}
+      </div>
+
+      <div class="form-control">
+        <label class="label">
+          <span class="label-text" style="color: #2c2c2c"
+            >Confirm Password</span
+          >
+        </label>
+        <input
+          type="password"
+          name="password2"
+          placeholder="Repeat your password"
+          class="input input-bordered w-full"
+          value="{{ request.POST.password2|default_if_none:'' }}"
+          required
+        />
+        <div>{% if form.password2.errors %}</div>
+        <p class="text-error text-sm mt-1">{{ form.password2.errors.0 }}</p>
+        {% endif %}
+      </div>
+
+      <button
+        type="submit"
+        class="btn text-white w-[200px] mx-auto block mt-12"
+        style="background-color: #f96e2a"
+      >
+        Sign Up
+      </button>
+    </form>
+  </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,51 @@
+{% extends "base.html" %} {% block title %}Log In{% endblock title %}
+<div>{% block content %}</div>
+<div
+  style="background-color: #fdfaf6; height: 100%"
+  class="flex items-center justify-center px-40"
+>
+  <div style="margin-top: 14vh" class="w-full max-w-sm p-8 text-center">
+    <h2 style="color: #78b3ce" class="text-3xl font-semibold text-primary mb-4">
+      Welcome Back <span class="inline-block">🔥</span>
+    </h2>
+    <form method="post" class="space-y-10">
+      {% csrf_token %}
+      <div class="form-control">
+        <label class="label">
+          <span style="color: #2c2c2c" class="label-text">Username</span>
+        </label>
+        <input
+          type="text"
+          name="username"
+          class="input input-bordered w-full"
+          required
+        />
+      </div>
+      <div class="form-control">
+        <label class="label">
+          <span style="color: #2c2c2c" class="label-text">Password</span>
+        </label>
+        <input
+          type="password"
+          name="password"
+          class="input input-bordered w-full"
+          required
+        />
+      </div>
+      <button
+        style="background-color: #f96e2a; width: 200px; margin-top: 48px"
+        type="submit"
+        class="btn text-white"
+      >
+        Sign in
+      </button>
+    </form>
+  </div>
+</div>
+{% if messages %} {% for msg in messages %}
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    alert("{{ msg|escapejs }}");
+  });
+</script>
+{% endfor %} {% endif %} {% endblock content %}
