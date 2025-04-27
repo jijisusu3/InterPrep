@@ -1,17 +1,6 @@
 {% extends "base.html" %} {% block title %}Home{% endblock title %}
 <div>{% block content %}</div>
 
-<!-- {% if user.is_authenticated %}
-<p>Hi {{ user.username }}!</p>
-<form action="{% url 'logout' %}" method="post">
-  {% csrf_token %}
-  <button type="submit">Log Out</button>
-</form>
-{% else %}
-<p>You are not logged in</p>
-<a href="{% url 'login' %}">Log In</a> |
-<a href="{% url 'signup' %}">Sign Up</a>
-{% endif %}  -->
 <section
   class="flex-grow flex items-center justify-center px-4"
   style="height: 100%; min-height: 600px"
@@ -23,22 +12,35 @@
     <p class="text-lg text-gray-700">
       Practice smarter with personalized questions, 10 at a time.
     </p>
+    {% if user.is_authenticated %}
+    <a href="{% url 'application_upload' %}">
+      <button
+        style="background-color: #f96e2a; width: 200px; margin-top: 48px"
+        class="btn text-white"
+      >
+        Get Started
+      </button></a
+    >
+    {% else %}
     <a href="{% url 'login' %}">
       <button
         style="background-color: #f96e2a; width: 200px; margin-top: 48px"
         class="btn text-white"
       >
-        Sign in
+        Get Started
       </button></a
     >
+    {% endif %}
   </div>
 </section>
-
-<!-- Feature Section -->
 <section
   class="flex flex-col md:flex-row items-center justify-between px-8 py-16 bg-base-100"
 >
-  <div class="space-y-4 text-gray-700" style="height: 100%; min-height: 500px">
+  <div
+    style="margin-left: 40px"
+    class="space-y-4 text-gray-700"
+    style="height: 100%; min-height: 500px"
+  >
     <p>
       InterPrep is your personal interview coach — here to help you land your
       dream job.
@@ -47,12 +49,9 @@
       Upload your resume, choose your role, and practice with smart, structured
       questions tailored just for you.
     </p>
-    <p>
-      With batch‑based practice, voice input, and answer history, you’ll build
-      real confidence one step at a time — no pressure, just progress.
-    </p>
   </div>
 </section>
+<!-- Feature Section -->
 <footer class="text-center py-4 bg-white text-sm text-gray-500">
   © 2025 Designed by Jisu Kim
 </footer>

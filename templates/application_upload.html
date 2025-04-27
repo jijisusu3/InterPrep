@@ -1,0 +1,98 @@
+{% extends "base.html" %} {% block title %}Application{% endblock title %}
+<div>{% block content %}</div>
+
+<main class="flex-grow flex flex-col items-center justify-center px-4 py-8">
+  <!-- Form container -->
+  <form
+    id="upload_form"
+    method="POST"
+    action="{% url 'application_upload' %}"
+    enctype="multipart/form-data"
+    class="w-full max-w-md space-y-6 p-6"
+    style="margin-top: 8vh"
+  >
+    <div class="text-center space-y-2">
+      <h2 style="color: #78b3ce" class="text-3xl font-semibold">
+        Ready to begin?
+      </h2>
+      <p style="color: #78b3ce" class="text-xl text-secondary">
+        Let’s find the right questions for you.
+      </p>
+    </div>
+    {% csrf_token %}
+    <!-- Role selector -->
+    <div class="form-control w-full">
+      <label class="label">
+        <span class="label-text flex items-center space-x-2">
+          <span>🧑‍💻</span>
+          <span>Choose your desired role</span>
+        </span>
+      </label>
+      <select name="job_role" class="select select-bordered w-full" required>
+        <option disabled selected>-- Select a Role --</option>
+        {% for role in job_roles %}
+        <option value="{{ role.value }}">{{ role.label }}</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <!-- Resume upload -->
+    <div class="form-control w-full">
+      <label class="label">
+        <span class="label-text flex items-center space-x-2">
+          <span>📄</span>
+          <span>Upload your resume (.txt only)</span>
+        </span>
+      </label>
+      <input
+        type="file"
+        name="resume"
+        accept=".txt"
+        class="file-input file-input-bordered w-full"
+        required
+      />
+    </div>
+
+    <!-- Submit button -->
+    <button
+      style="background-color: #f96e2a; width: 200px; margin-top: 48px"
+      type="submit"
+      class="btn text-white flex mx-auto block"
+    >
+      Submit
+    </button>
+  </form>
+  <div
+    id="loading"
+    class="fixed inset-0 bg-white bg-opacity-75 flex items-center justify-center hidden"
+  >
+    <span class="loading loading-spinner text-success"></span>
+  </div>
+
+  <script>
+    document
+      .getElementById("upload_form")
+      .addEventListener("submit", async function (e) {
+        e.preventDefault();
+        document.getElementById("loading").classList.remove("hidden");
+        const formData = new FormData(this);
+        const resp = await fetch(this.action, {
+          method: "POST",
+          headers: { "X-CSRFToken": "{{ csrf_token }}" },
+          body: formData,
+        });
+        if (!resp.ok) {
+          document.getElementById("loading").classList.add("hidden");
+          const data = await resp.json();
+          alert("Error: " + JSON.stringify(data.errors));
+          return;
+        }
+        const { application_id } = await resp.json();
+        window.location.href = "{% url 'application_read' 0 %}".replace(
+          /0$/,
+          application_id
+        );
+      });
+  </script>
+</main>
+{% endblock %}

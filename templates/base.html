@@ -30,8 +30,12 @@
       <div class="flex-none">
         {% if user.is_authenticated %}
         <ul class="menu menu-horizontal px-5">
-          <li style="margin-right: 16px"><a>My Practice</a></li>
-          <li style="margin-right: 16px"><a>Add a New Role</a></li>
+          <li style="margin-right: 16px">
+            <a href="{% url 'application_read_default' %}">My Practice</a>
+          </li>
+          <li style="margin-right: 16px">
+            <a href="{% url 'application_upload' %}">Add a New Role</a>
+          </li>
           <li>
             <form
               method="post"

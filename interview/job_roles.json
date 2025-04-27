@@ -1,0 +1,662 @@
+[
+  {
+    "value": "frontend_developer",
+    "label": "Frontend Developer"
+  },
+  {
+    "value": "backend_developer",
+    "label": "Backend Developer"
+  },
+  {
+    "value": "full_stack_developer",
+    "label": "Full Stack Developer"
+  },
+  {
+    "value": "mobile_developer",
+    "label": "Mobile Developer"
+  },
+  {
+    "value": "android_developer",
+    "label": "Android Developer"
+  },
+  {
+    "value": "ios_developer",
+    "label": "iOS Developer"
+  },
+  {
+    "value": "devops_engineer",
+    "label": "DevOps Engineer"
+  },
+  {
+    "value": "site_reliability_engineer",
+    "label": "Site Reliability Engineer"
+  },
+  {
+    "value": "qa_engineer",
+    "label": "QA Engineer"
+  },
+  {
+    "value": "test_automation_engineer",
+    "label": "Test Automation Engineer"
+  },
+  {
+    "value": "security_engineer",
+    "label": "Security Engineer"
+  },
+  {
+    "value": "penetration_tester",
+    "label": "Penetration Tester"
+  },
+  {
+    "value": "security_analyst",
+    "label": "Security Analyst"
+  },
+  {
+    "value": "network_engineer",
+    "label": "Network Engineer"
+  },
+  {
+    "value": "systems_engineer",
+    "label": "Systems Engineer"
+  },
+  {
+    "value": "system_administrator",
+    "label": "System Administrator"
+  },
+  {
+    "value": "database_administrator",
+    "label": "Database Administrator"
+  },
+  {
+    "value": "sql_developer",
+    "label": "SQL Developer"
+  },
+  {
+    "value": "data_engineer",
+    "label": "Data Engineer"
+  },
+  {
+    "value": "data_scientist",
+    "label": "Data Scientist"
+  },
+  {
+    "value": "machine_learning_engineer",
+    "label": "Machine Learning Engineer"
+  },
+  {
+    "value": "ai_engineer",
+    "label": "AI Engineer"
+  },
+  {
+    "value": "deep_learning_engineer",
+    "label": "Deep Learning Engineer"
+  },
+  {
+    "value": "nlp_engineer",
+    "label": "NLP Engineer"
+  },
+  {
+    "value": "computer_vision_engineer",
+    "label": "Computer Vision Engineer"
+  },
+  {
+    "value": "research_scientist",
+    "label": "Research Scientist"
+  },
+  {
+    "value": "software_architect",
+    "label": "Software Architect"
+  },
+  {
+    "value": "solutions_architect",
+    "label": "Solutions Architect"
+  },
+  {
+    "value": "cloud_architect",
+    "label": "Cloud Architect"
+  },
+  {
+    "value": "technical_architect",
+    "label": "Technical Architect"
+  },
+  {
+    "value": "enterprise_architect",
+    "label": "Enterprise Architect"
+  },
+  {
+    "value": "platform_engineer",
+    "label": "Platform Engineer"
+  },
+  {
+    "value": "release_manager",
+    "label": "Release Manager"
+  },
+  {
+    "value": "product_manager",
+    "label": "Product Manager"
+  },
+  {
+    "value": "project_manager",
+    "label": "Project Manager"
+  },
+  {
+    "value": "scrum_master",
+    "label": "Scrum Master"
+  },
+  {
+    "value": "agile_coach",
+    "label": "Agile Coach"
+  },
+  {
+    "value": "ux_designer",
+    "label": "UX Designer"
+  },
+  {
+    "value": "ui_designer",
+    "label": "UI Designer"
+  },
+  {
+    "value": "graphic_designer",
+    "label": "Graphic Designer"
+  },
+  {
+    "value": "product_designer",
+    "label": "Product Designer"
+  },
+  {
+    "value": "interaction_designer",
+    "label": "Interaction Designer"
+  },
+  {
+    "value": "ux_researcher",
+    "label": "UX Researcher"
+  },
+  {
+    "value": "ux_writer",
+    "label": "UX Writer"
+  },
+  {
+    "value": "content_strategist",
+    "label": "Content Strategist"
+  },
+  {
+    "value": "content_writer",
+    "label": "Content Writer"
+  },
+  {
+    "value": "copywriter",
+    "label": "Copywriter"
+  },
+  {
+    "value": "technical_writer",
+    "label": "Technical Writer"
+  },
+  {
+    "value": "marketing_manager",
+    "label": "Marketing Manager"
+  },
+  {
+    "value": "digital_marketing_specialist",
+    "label": "Digital Marketing Specialist"
+  },
+  {
+    "value": "seo_specialist",
+    "label": "SEO Specialist"
+  },
+  {
+    "value": "sem_specialist",
+    "label": "SEM Specialist"
+  },
+  {
+    "value": "ppc_specialist",
+    "label": "PPC Specialist"
+  },
+  {
+    "value": "social_media_manager",
+    "label": "Social Media Manager"
+  },
+  {
+    "value": "community_manager",
+    "label": "Community Manager"
+  },
+  {
+    "value": "brand_manager",
+    "label": "Brand Manager"
+  },
+  {
+    "value": "public_relations_manager",
+    "label": "Public Relations Manager"
+  },
+  {
+    "value": "content_marketer",
+    "label": "Content Marketer"
+  },
+  {
+    "value": "email_marketing_specialist",
+    "label": "Email Marketing Specialist"
+  },
+  {
+    "value": "performance_marketer",
+    "label": "Performance Marketer"
+  },
+  {
+    "value": "growth_marketer",
+    "label": "Growth Marketer"
+  },
+  {
+    "value": "sales_representative",
+    "label": "Sales Representative"
+  },
+  {
+    "value": "account_manager",
+    "label": "Account Manager"
+  },
+  {
+    "value": "business_development_manager",
+    "label": "Business Development Manager"
+  },
+  {
+    "value": "customer_success_manager",
+    "label": "Customer Success Manager"
+  },
+  {
+    "value": "customer_support_specialist",
+    "label": "Customer Support Specialist"
+  },
+  {
+    "value": "help_desk_technician",
+    "label": "Help Desk Technician"
+  },
+  {
+    "value": "it_support_specialist",
+    "label": "IT Support Specialist"
+  },
+  {
+    "value": "field_service_technician",
+    "label": "Field Service Technician"
+  },
+  {
+    "value": "technical_support_engineer",
+    "label": "Technical Support Engineer"
+  },
+  {
+    "value": "hr_manager",
+    "label": "HR Manager"
+  },
+  {
+    "value": "recruiter",
+    "label": "Recruiter"
+  },
+  {
+    "value": "talent_acquisition_specialist",
+    "label": "Talent Acquisition Specialist"
+  },
+  {
+    "value": "learning_and_development_manager",
+    "label": "Learning and Development Manager"
+  },
+  {
+    "value": "training_coordinator",
+    "label": "Training Coordinator"
+  },
+  {
+    "value": "instructional_designer",
+    "label": "Instructional Designer"
+  },
+  {
+    "value": "operations_manager",
+    "label": "Operations Manager"
+  },
+  {
+    "value": "logistics_manager",
+    "label": "Logistics Manager"
+  },
+  {
+    "value": "supply_chain_manager",
+    "label": "Supply Chain Manager"
+  },
+  {
+    "value": "procurement_specialist",
+    "label": "Procurement Specialist"
+  },
+  {
+    "value": "purchasing_manager",
+    "label": "Purchasing Manager"
+  },
+  {
+    "value": "facilities_manager",
+    "label": "Facilities Manager"
+  },
+  {
+    "value": "office_manager",
+    "label": "Office Manager"
+  },
+  {
+    "value": "financial_analyst",
+    "label": "Financial Analyst"
+  },
+  {
+    "value": "accountant",
+    "label": "Accountant"
+  },
+  {
+    "value": "controller",
+    "label": "Controller"
+  },
+  {
+    "value": "finance_manager",
+    "label": "Finance Manager"
+  },
+  {
+    "value": "chief_financial_officer",
+    "label": "Chief Financial Officer"
+  },
+  {
+    "value": "auditor",
+    "label": "Auditor"
+  },
+  {
+    "value": "internal_auditor",
+    "label": "Internal Auditor"
+  },
+  {
+    "value": "compliance_officer",
+    "label": "Compliance Officer"
+  },
+  {
+    "value": "legal_counsel",
+    "label": "Legal Counsel"
+  },
+  {
+    "value": "paralegal",
+    "label": "Paralegal"
+  },
+  {
+    "value": "business_intelligence_analyst",
+    "label": "Business Intelligence Analyst"
+  },
+  {
+    "value": "bi_developer",
+    "label": "BI Developer"
+  },
+  {
+    "value": "market_research_analyst",
+    "label": "Market Research Analyst"
+  },
+  {
+    "value": "research_analyst",
+    "label": "Research Analyst"
+  },
+  {
+    "value": "statistician",
+    "label": "Statistician"
+  },
+  {
+    "value": "economist",
+    "label": "Economist"
+  },
+  {
+    "value": "actuary",
+    "label": "Actuary"
+  },
+  {
+    "value": "architect",
+    "label": "Architect"
+  },
+  {
+    "value": "civil_engineer",
+    "label": "Civil Engineer"
+  },
+  {
+    "value": "structural_engineer",
+    "label": "Structural Engineer"
+  },
+  {
+    "value": "mechanical_engineer",
+    "label": "Mechanical Engineer"
+  },
+  {
+    "value": "electrical_engineer",
+    "label": "Electrical Engineer"
+  },
+  {
+    "value": "chemical_engineer",
+    "label": "Chemical Engineer"
+  },
+  {
+    "value": "aerospace_engineer",
+    "label": "Aerospace Engineer"
+  },
+  {
+    "value": "automotive_engineer",
+    "label": "Automotive Engineer"
+  },
+  {
+    "value": "biomedical_engineer",
+    "label": "Biomedical Engineer"
+  },
+  {
+    "value": "environmental_engineer",
+    "label": "Environmental Engineer"
+  },
+  {
+    "value": "industrial_engineer",
+    "label": "Industrial Engineer"
+  },
+  {
+    "value": "petroleum_engineer",
+    "label": "Petroleum Engineer"
+  },
+  {
+    "value": "marine_engineer",
+    "label": "Marine Engineer"
+  },
+  {
+    "value": "spatial_data_analyst",
+    "label": "Spatial Data Analyst"
+  },
+  {
+    "value": "geospatial_engineer",
+    "label": "Geospatial Engineer"
+  },
+  {
+    "value": "urban_planner",
+    "label": "Urban Planner"
+  },
+  {
+    "value": "landscape_architect",
+    "label": "Landscape Architect"
+  },
+  {
+    "value": "civil_drafter",
+    "label": "Civil Drafter"
+  },
+  {
+    "value": "cad_technician",
+    "label": "CAD Technician"
+  },
+  {
+    "value": "laboratory_technician",
+    "label": "Laboratory Technician"
+  },
+  {
+    "value": "quality_assurance_specialist",
+    "label": "Quality Assurance Specialist"
+  },
+  {
+    "value": "quality_control_analyst",
+    "label": "Quality Control Analyst"
+  },
+  {
+    "value": "pharmacist",
+    "label": "Pharmacist"
+  },
+  {
+    "value": "pharmacy_technician",
+    "label": "Pharmacy Technician"
+  },
+  {
+    "value": "nurse",
+    "label": "Nurse"
+  },
+  {
+    "value": "doctor",
+    "label": "Doctor"
+  },
+  {
+    "value": "physician_assistant",
+    "label": "Physician Assistant"
+  },
+  {
+    "value": "dentist",
+    "label": "Dentist"
+  },
+  {
+    "value": "physical_therapist",
+    "label": "Physical Therapist"
+  },
+  {
+    "value": "occupational_therapist",
+    "label": "Occupational Therapist"
+  },
+  {
+    "value": "radiologic_technologist",
+    "label": "Radiologic Technologist"
+  },
+  {
+    "value": "medical_laboratory_scientist",
+    "label": "Medical Laboratory Scientist"
+  },
+  {
+    "value": "medical_assistant",
+    "label": "Medical Assistant"
+  },
+  {
+    "value": "psychologist",
+    "label": "Psychologist"
+  },
+  {
+    "value": "social_worker",
+    "label": "Social Worker"
+  },
+  {
+    "value": "counselor",
+    "label": "Counselor"
+  },
+  {
+    "value": "therapist",
+    "label": "Therapist"
+  },
+  {
+    "value": "veterinarian",
+    "label": "Veterinarian"
+  },
+  {
+    "value": "veterinary_technician",
+    "label": "Veterinary Technician"
+  },
+  {
+    "value": "event_planner",
+    "label": "Event Planner"
+  },
+  {
+    "value": "hospitality_manager",
+    "label": "Hospitality Manager"
+  },
+  {
+    "value": "hotel_manager",
+    "label": "Hotel Manager"
+  },
+  {
+    "value": "chef",
+    "label": "Chef"
+  },
+  {
+    "value": "sous_chef",
+    "label": "Sous Chef"
+  },
+  {
+    "value": "line_cook",
+    "label": "Line Cook"
+  },
+  {
+    "value": "restaurant_manager",
+    "label": "Restaurant Manager"
+  },
+  {
+    "value": "flight_attendant",
+    "label": "Flight Attendant"
+  },
+  {
+    "value": "pilot",
+    "label": "Pilot"
+  },
+  {
+    "value": "air_traffic_controller",
+    "label": "Air Traffic Controller"
+  },
+  {
+    "value": "logistics_coordinator",
+    "label": "Logistics Coordinator"
+  },
+  {
+    "value": "truck_driver",
+    "label": "Truck Driver"
+  },
+  {
+    "value": "courier",
+    "label": "Courier"
+  },
+  {
+    "value": "delivery_driver",
+    "label": "Delivery Driver"
+  },
+  {
+    "value": "teacher",
+    "label": "Teacher"
+  },
+  {
+    "value": "professor",
+    "label": "Professor"
+  },
+  {
+    "value": "academic_advisor",
+    "label": "Academic Advisor"
+  },
+  {
+    "value": "instructional_coordinator",
+    "label": "Instructional Coordinator"
+  },
+  {
+    "value": "career_counselor",
+    "label": "Career Counselor"
+  },
+  {
+    "value": "library_technician",
+    "label": "Library Technician"
+  },
+  {
+    "value": "environmental_scientist",
+    "label": "Environmental Scientist"
+  },
+  {
+    "value": "conservation_scientist",
+    "label": "Conservation Scientist"
+  },
+  {
+    "value": "wildlife_biologist",
+    "label": "Wildlife Biologist"
+  },
+  {
+    "value": "forestry_technician",
+    "label": "Forestry Technician"
+  },
+  {
+    "value": "agricultural_engineer",
+    "label": "Agricultural Engineer"
+  },
+  {
+    "value": "others",
+    "label": "Others"
+  }
+]
